@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Adventure - Desert Safari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sunset Adventure</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#packages">Safari Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking" class="btn">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Experience the Thrill of a Desert Safari</h2>
+        <p>Join us for an unforgettable adventure in the Arabian desert.</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Sunset Adventure provides premium desert safari experiences with top safety and quality.</p>
+    </section>
+
+    <section id="packages">
+        <h2>Our Safari Packages</h2>
+        <div class="package">
+            <h3>Evening Desert Safari</h3>
+            <p>Includes dune bashing, camel rides, and dinner.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+        <div class="package">
+            <h3>Overnight Safari</h3>
+            <p>Enjoy a night in the desert under the stars.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Adventure</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="package">Choose Package:</label>
+            <select id="package" name="package">
+                <option value="evening">Evening Desert Safari</option>
+                <option value="overnight">Overnight Safari</option>
+            </select>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@sunsetadventure.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sunset Adventure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
